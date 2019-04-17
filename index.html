@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pepsi Zero Product Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,500,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <img id="header-img" src="/images/pepsi-logo.svg" alt="pepsi logo" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#section-new">WHAT'S NEW</a>
+        <a class="nav-link" href="#section-leah">PEPSI x LEAH</a>
+        <a class="nav-link" href="#section-discover">DISCOVER</a>
+      </nav>
+      <img
+        id="leah-img"
+        src="/images/promote-pic.png"
+        alt="Pepsi's celebrity Leah Tong is holding a can of pepsi zero in her hand."
+      />
+    </header>
+
+    <section id="section-new">
+      <div class="new-feature">
+        <h1>zero</h1>
+        <ul>
+          <li class="feature-list">0 CALORIES</li>
+          <li class="feature-list">0 CARBS</li>
+          <li class="feature-list">0 SUGAR</li>
+        </ul>
+      </div>
+      <div class="new-look">
+        <img src="/images/can-pepsi-zero.png" alt="one can of pepsi zero" />
+      </div>
+    </section>
+
+    <section id="section-leah">
+      <h1>
+        <div class="pepsi">
+          <img
+            class="pepsi"
+            src="/images/pepsi-font.jpg"
+            alt="blue letters of pepsi"
+          />
+        </div>
+        <div class="x">x</div>
+        <div class="leah">leah</div>
+      </h1>
+      <div class="product-video">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/8l1lS-d2qFk"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <section id="section-discover">
+      <img
+        src="/images/pepsi-cheers.png"
+        alt="two persons cheers with glass bottle of pepsi"
+      />
+      <div class="subscribe-form">
+        <h1><span id="lets">let's</span> &nbsp<span id="pepsi">pepsi</span></h1>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="input-name">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" placeholder="cheers" type="text" />
+          </div>
+
+          <div class="input-email">
+            <label for="email">Your Email</label>
+            <input
+              id="email"
+              name="email"
+              placeholder="lets@pepsi.com"
+              type="email"
+            />
+          </div>
+
+          <div class="input-submit">
+            <input id="submit" type="submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Designed By <span>Izou Kim</span></p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
