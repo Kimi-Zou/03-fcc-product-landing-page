@@ -1,7 +1,7 @@
 /*---------------- Global ----------------*/
 @font-face {
   font-family: "pepsi";
-  src: url("/images/PEPSI_pl.ttf") format("truetype");
+  src: url(./images/PEPSI_pl.ttf) format("truetype");
 }
 
 body {
