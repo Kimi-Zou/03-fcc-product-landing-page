@@ -17,6 +17,9 @@ a {
   text-decoration: none;
   color: rgb(228, 228, 228);
 }
+img {
+  display: block;
+}
 
 /*---------------- Header ----------------*/
 header {
@@ -34,6 +37,24 @@ img#header-img {
   height: auto;
   padding: 10px 25%;
   z-index: 2;
+}
+#header-img:before {
+  content: "Oops, logo is missing";
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-family: roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#header-img:after {
+  content: "Pepsi Logo";
+  font-size: 1rem;
+  display: block;
+  max-width: 95px;
+  height: auto;
+  padding: 10px 25%;
+  z-index: 2;
+  background-color: white;
+  border-radius: 10%;
 }
 nav#nav-bar {
   position: fixed;
@@ -55,6 +76,26 @@ img#leah-img {
   max-width: 48em;
   height: auto;
   margin: auto;
+}
+#leah-img:before {
+  content: "No Leah today :(";
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-family: roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#leah-img:after {
+  content: "Pepsi celebrity Leah Tong with Pepsi Zero";
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  max-width: 48em;
+  height: 100vh;
+  z-index: 1;
+  background-color: #040000;
+  border-radius: 10%;
+  color: white;
+  font-size: 5rem;
 }
 
 @media (max-width: 650px) {
@@ -81,6 +122,19 @@ img#leah-img {
     max-width: 100%;
     height: auto;
     margin: auto;
+  }
+  #leah-img:after {
+    content: "Pepsi celebrity Leah Tong with Pepsi Zero";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    max-width: 48em;
+    height: 100vh;
+    z-index: 1;
+    background-color: #040000;
+    border-radius: 10%;
+    color: white;
+    font-size: 3rem;
   }
 }
 
@@ -124,6 +178,27 @@ img#leah-img {
   max-width: 100%;
   height: auto;
 }
+.new-look > img:before {
+  content: "Ooops, the can is empty";
+  display: block;
+  color: #040000;
+  font-size: 1rem;
+  font-family: roboto, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.new-look > img:after {
+  content: "I'm a can of Pepsi Zero";
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 18rem;
+  height: 70vh;
+  background-color: #040000;
+  border-radius: 10%;
+  color: white;
+  font-size: 3rem;
+}
+
 @media (max-width: 650px) {
   #section-new {
     display: flex;
@@ -159,12 +234,12 @@ img#leah-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3em 0 6em 0;
+    margin: 6em 0 6em 0;
   }
+
   .new-look > img {
     max-width: 75%;
     height: auto;
-    margin: auto;
   }
 }
 
